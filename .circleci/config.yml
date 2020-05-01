@@ -4,7 +4,7 @@ orbs:
 jobs:
   build-and-test:
     executor:
-      name: node/default
+      executor: aws-servlerless/default
     steps:
       - checkout
       - run: cd api/hello-world && npm install
