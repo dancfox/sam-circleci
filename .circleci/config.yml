@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: cd api/hello-world && npm install
-      - run: cd api/hello-world && npm test
+      - run: npm test
 workflows:
     build-and-test:
       jobs:
