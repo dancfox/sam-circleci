@@ -9,7 +9,6 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: 
             - run: cd api/hello-world && npm install
             - run: cd api/hello-world && npm test
 workflows:
