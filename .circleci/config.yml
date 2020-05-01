@@ -3,8 +3,7 @@ orbs:
   aws-serverless: circleci/aws-serverless@1.0.2
 jobs:
   build-and-test:
-    executor:
-      executor: aws-servlerless/default
+    executor: aws-servlerless/default
     steps:
       - checkout
       - run: cd api/hello-world && npm install
