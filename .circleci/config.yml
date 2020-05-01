@@ -6,7 +6,7 @@ jobs:
     executor: aws-serverless/default
     steps:
       - checkout
-      - run: cd api/hello-world && npm install && npm test
+      - run: node --version
 workflows:
     build-and-test:
       jobs:
