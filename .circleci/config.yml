@@ -7,10 +7,8 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: cd api/hello-world && npm install
-            - run: cd api/hello-world && npm test
+      - run: cd api/hello-world && npm install
+      - run: cd api/hello-world && npm test
 workflows:
     build-and-test:
       jobs:
